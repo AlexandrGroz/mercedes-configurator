@@ -1,7 +1,7 @@
 import * as THREE from 'three'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
-import { ColorGUIHelper, makeXYZGUI} from '~shared/3D/helpers';
+import { ColorGUIHelper, makeXYZGUI} from '~shared/3D/helpers.js';
 import { venvTextures } from '../models/index.ts'
 import shadow from './shadow.jpg'
 import { loadModel, setLoadHandlers } from './load_models.js';
@@ -56,6 +56,7 @@ export function CreateScene(blockRef, wrapperRef, carModel, colorBody, setProgre
 
     /**Render**/
     const renderer = new THREE.WebGLRenderer({antialias: true, alpha: true, canvas});
+    renderer.setSize(width, height, false);
 
 
     /**Main object**/

@@ -1,7 +1,7 @@
 import * as THREE from 'three'
 import { useEffect, useRef, useState } from "react";
 import * as S from "./model_canvas.styles.ts";
-import { CreateScene } from "~shared/3D tests/3D_base_scene.js";
+import { CreateScene } from "~shared/3D/3D_base_scene.js";
 import { ColorRGB, useModelStore } from "~entities";
 import gsap from 'gsap';
 import { AnimatePresence } from 'motion/react';

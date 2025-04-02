@@ -14,7 +14,7 @@ export const BottomMenu = () => {
 
     return (
         <S.Wrapper>
-            <S.ShowCloseButton onClick={() => setIsMenuShow(!isMenuShow)}>{isMenuShow ? "↓ Свернуть" : "↑ Развернуть"}</S.ShowCloseButton>
+            <S.ShowCloseButton onClick={() => setIsMenuShow(!isMenuShow)}>{isMenuShow ? "↓ Collapse" : "↑ Expand"}</S.ShowCloseButton>
             
             <AnimatePresence>
                 {isMenuShow &&

@@ -36,7 +36,7 @@ export const TopMenu = () => {
                     )}
                 </AnimatePresence>
 
-                <S.ShowCloseButton onClick={() => setIsMenuShow(!isMenuShow)}>{isMenuShow ? "↑ Свернуть" : "↓ Развернуть"}</S.ShowCloseButton>
+                <S.ShowCloseButton onClick={() => setIsMenuShow(!isMenuShow)}>{isMenuShow ? "↑ Collapse" : "↓ Expand"}</S.ShowCloseButton>
                 
         </S.Wrapper>
     );

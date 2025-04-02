@@ -5,7 +5,7 @@ export const MainWrapper = styled.div`
     width: 100%;
     min-width: 320px;
     height: 100%;
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
