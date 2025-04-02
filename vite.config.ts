@@ -17,4 +17,8 @@ export default defineConfig({
     },
   },
   assetsInclude: ['**/*.glb', '**/*.obj', '**/*.mtl',],
+  server: {
+    host: true,
+    port: 8000,
+  },
 })

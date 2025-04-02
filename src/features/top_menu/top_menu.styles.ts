@@ -15,20 +15,23 @@ export const Wrapper = styled.div`
 `
 
 export const InsideWrapper = styled(motion.div)`
-    width: 100%;
     background: var(--LIGHT_100);
     box-shadow: var(--SHADOW_100) 0 0 0.125rem 0;
-    overflow: hidden;
+    width: 100%;
+    height: fit-content;
+    padding: 0 1rem;
     gap: 0.5rem;
     display: flex;
+    align-items: flex-start;
     justify-content: center;
+    overflow: hidden;
 `
 
 export const ShowCloseButton = styled.div`
     width: fit-content;
     white-space: nowrap;
-    padding: 0.15rem 0.5rem;
-    font-size: 0.8rem;
+    padding: 0.5rem 0.55rem;
+    font-size: 1rem;
     font-weight: 500;
     background: var(--LIGHT_100);
     border-radius: 0 0 0.3125rem 0.3125rem;
@@ -40,5 +43,10 @@ export const ShowCloseButton = styled.div`
     &:hover{
         background: var(--DARK_100);
         color: var(--LIGHT_100);
+    }
+
+    @media (min-width: 900px) {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.5rem;
     }
 `

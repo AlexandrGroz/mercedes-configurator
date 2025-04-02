@@ -19,7 +19,7 @@ export const TopMenu = () => {
                         <S.InsideWrapper
                             layout
                             initial={{ height: "0", opacity: 0 }}
-                            animate={{ height: "4.5rem", opacity: 1 }}
+                            animate={{ height: "5.5rem", opacity: 1 }}
                             exit={{ height: "0", opacity: 0 }}
                         >
                             {cars.map((car)=>(

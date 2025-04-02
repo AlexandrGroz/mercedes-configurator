@@ -3,12 +3,12 @@ import { DisableTextSelect } from "~shared/additional_styles";
 
 export const Wrapper = styled.div`
     ${DisableTextSelect};
-    height: 4.5rem;
+    width: fit-content;
+    height: 5.5rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background: var(--LIGHT_100);
     border-radius: 0 0 0.625rem 0.625rem;
     padding: 0.5rem 0.25rem;
     transition: 0.3s all ease;
@@ -26,11 +26,9 @@ export const Wrapper = styled.div`
 `
 
 export const Image = styled.img`
-    height: 65%;
-    
-    @media (min-width: 900px) {
-        height: 75%;
-    }
+    padding-top: 1rem;
+    width: 100%;
+    height: 75%;
 `
 
 export const Text = styled.span`
